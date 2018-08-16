@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Com.OneSignal;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -16,7 +16,8 @@ namespace OSXample.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
+            OneSignal.Current.StartInit("963bf3b5-63cb-4c85-997a-37703ea727d2")
+                  .EndInit();
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);

@@ -1,3 +1,4 @@
+using Com.OneSignal;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,9 @@ namespace OSXample
 			InitializeComponent();
 
 			MainPage = new MainPage();
-		}
+            OneSignal.Current.StartInit("963bf3b5-63cb-4c85-997a-37703ea727d2-890")
+                  .EndInit();
+        }
 
 		protected override void OnStart ()
 		{

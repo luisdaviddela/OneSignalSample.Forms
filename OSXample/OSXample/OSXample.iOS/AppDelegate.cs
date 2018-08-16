@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Com.OneSignal;
 using Foundation;
 using UIKit;
 
@@ -22,6 +22,8 @@ namespace OSXample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            OneSignal.Current.StartInit("963bf3b5-63cb-4c85-997a-37703ea727d2")
+                  .EndInit();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
