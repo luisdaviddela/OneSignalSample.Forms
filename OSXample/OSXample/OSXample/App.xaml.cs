@@ -13,7 +13,7 @@ namespace OSXample
 			InitializeComponent();
 
 			MainPage = new MainPage();
-            OneSignal.Current.StartInit("963bf3b5-63cb-4c85-997a-37703ea727d2-890")
+            OneSignal.Current.StartInit("YOUR_ONESIGNAL_APP_ID")
                   .EndInit();
         }
 

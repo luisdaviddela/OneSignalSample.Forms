@@ -16,7 +16,7 @@ namespace OSXample.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            OneSignal.Current.StartInit("963bf3b5-63cb-4c85-997a-37703ea727d2")
+            OneSignal.Current.StartInit("YOUR_ONESIGNAL_APP_ID")
                   .EndInit();
             base.OnCreate(bundle);
 
